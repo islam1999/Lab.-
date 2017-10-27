@@ -8,13 +8,13 @@ int main(int argc, char *argv[])
     char b;
 
     if (argc <= 1) return 0;
-    if (sscanf(argv[1], "%f", &a) == 1)
+    if (sscanf_s(argv[1], "%f", &a) == 1)
     if (argc == 3) b = argv[2][0];
-    else if (argc == 2)
+    else (argc == 2);
         n = a;
             if (argc ==3)
             {
-              b = tolower(b);
+              b = (char)tolower(b);
               switch (b)
                {
                 case 'c':
@@ -80,6 +80,6 @@ int main(int argc, char *argv[])
                 else
                     printf ("K = The temperature is equal to absolute zero\n");
             }
-
+			scanf_s("%*s");
 return 0;
 }
