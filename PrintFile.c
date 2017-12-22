@@ -27,4 +27,4 @@ int main(int argc, char ** argv)
     printf("Written %d records, total %d bytes\n", pos, sizze);
     return 0;
 }
-© 2017 GitHub, Inc.
+
